@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Checkout Section -->
+
+    <section class="checkout-container">
+
+        <div class="checkout-form">
+
+            <h2>Shipping Details</h2>
+
+            <form id="checkoutForm">
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number" required>
+
+                <label>Address</label>
+                <textarea rows="4" placeholder="Enter delivery address" required></textarea>
+
+                <label>City</label>
+                <input type="text" placeholder="Enter your city" required>
+
+                <label>Pincode</label>
+                <input type="text" placeholder="Enter pincode" required>
+
+                <label>Payment Method</label>
+
+                <select required>
+                    <option value="">Select Payment Method</option>
+                    <option>Cash on Delivery</option>
+                    <option>UPI</option>
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                </select>
+
+                <button type="submit" class="shop-btn">
+
+                    Place Order
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Order Summary -->
+
+        <div class="order-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-box">
+
+                <p>Total Items <span id="totalItems">0</span></p>
+
+                <p>Subtotal <span id="subtotal">₹0</span></p>
+
+                <p>Shipping <span>FREE</span></p>
+
+                <hr>
+
+                <h3>Total <span id="finalTotal">₹0</span></h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 ShopEase | Secure Checkout
+
+        </p>
+
+    </footer>
+
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>
