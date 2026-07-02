@@ -249,3 +249,75 @@
 }
 
 }
+.card-content{
+    padding:20px;
+}
+
+.rating{
+    color:#fbbf24;
+    margin:10px 0;
+    font-size:16px;
+}
+
+.rating span{
+    color:#666;
+    font-size:14px;
+    margin-left:8px;
+}
+
+.price{
+    color:#16a34a;
+    font-size:28px;
+    margin:15px 0;
+}
+
+.description{
+    color:#666;
+    font-size:14px;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.product-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.view-btn,
+.cart-btn,
+.wish-btn{
+
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.view-btn{
+    background:#6366f1;
+}
+
+.view-btn:hover{
+    background:#4f46e5;
+}
+
+.cart-btn{
+    background:#2563eb;
+}
+
+.cart-btn:hover{
+    background:#1d4ed8;
+}
+
+.wish-btn{
+    background:#e11d48;
+}
+
+.wish-btn:hover{
+    background:#be123c;
+}
