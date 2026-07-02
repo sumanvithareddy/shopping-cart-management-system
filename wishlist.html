@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Wishlist</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="wishlist.html" style="color:#ffd700;">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Wishlist Header -->
+
+    <section class="page-header">
+
+        <h1>❤️ My Wishlist</h1>
+
+        <p>Your favourite products are saved here.</p>
+
+    </section>
+
+    <!-- Wishlist Products -->
+
+    <section class="featured">
+
+        <div class="product-container" id="wishlistContainer">
+
+            <!-- Products loaded using wishlist.js -->
+
+        </div>
+
+    </section>
+
+    <!-- Empty Wishlist -->
+
+    <section id="emptyWishlist" style="display:none;text-align:center;padding:80px;">
+
+        <i class="fa-solid fa-heart-crack"
+            style="font-size:90px;color:#e11d48;"></i>
+
+        <h2 style="margin-top:20px;">
+            Your Wishlist is Empty
+        </h2>
+
+        <p style="margin:20px 0;color:gray;">
+            Save your favourite products here.
+        </p>
+
+        <a href="products.html" class="shop-btn">
+
+            Browse Products
+
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 ShopEase | Wishlist
+
+        </p>
+
+    </footer>
+
+    <script src="js/wishlist.js"></script>
+
+</body>
+
+</html>
