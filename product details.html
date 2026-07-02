@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase | Product Details</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="wishlist.html">Wishlist</a></li>
+
+            <li><a href="cart.html">Cart</a></li>
+
+            <li><a href="profile.html">Profile</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Product Details -->
+
+    <section class="product-details">
+
+        <div class="product-image">
+
+            <img src="images/product1.jpg"
+                 alt="Wireless Headphones"
+                 id="productImage">
+
+        </div>
+
+        <div class="product-info">
+
+            <h1 id="productName">
+                Wireless Headphones
+            </h1>
+
+            <div class="rating">
+
+                ⭐⭐⭐⭐⭐
+                <span>(4.8 / 5)</span>
+
+            </div>
+
+            <h2 class="price">
+                ₹2,499
+            </h2>
+
+            <p class="description">
+
+                Experience premium sound quality with these wireless
+                headphones featuring Bluetooth 5.3, active noise cancellation,
+                40-hour battery life, and ultra-soft ear cushions for
+                all-day comfort.
+
+            </p>
+
+            <div class="specifications">
+
+                <h3>Specifications</h3>
+
+                <ul>
+
+                    <li>Bluetooth 5.3</li>
+
+                    <li>40 Hours Battery Backup</li>
+
+                    <li>Fast Charging</li>
+
+                    <li>Noise Cancellation</li>
+
+                    <li>Built-in Microphone</li>
+
+                    <li>1 Year Warranty</li>
+
+                </ul>
+
+            </div>
+
+            <div class="buttons">
+
+                <button class="shop-btn"
+                    onclick="addToCart('Wireless Headphones',2499)">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+                <button class="wishlist-btn"
+                    onclick="addToWishlist()">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    Add to Wishlist
+
+                </button>
+
+            </div>
+
+            <div class="delivery">
+
+                <h3>Delivery Information</h3>
+
+                <p>
+                    🚚 Free Delivery within 3-5 business days.
+                </p>
+
+                <p>
+                    🔄 7-Day Easy Replacement.
+                </p>
+
+                <p>
+                    💳 Cash on Delivery Available.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Related Products -->
+
+    <section class="featured">
+
+        <h2 style="text-align:center;margin-bottom:30px;">
+            Related Products
+        </h2>
+
+        <div class="product-container">
+
+            <div class="card">
+
+                <img src="images/product2.jpg">
+
+                <h3>Smart Watch</h3>
+
+                <p>₹3,999</p>
+
+                <button onclick="location.href='product-details.html'">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/product3.jpg">
+
+                <h3>Running Shoes</h3>
+
+                <p>₹2,999</p>
+
+                <button onclick="location.href='product-details.html'">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/laptop.jpg">
+
+                <h3>Laptop</h3>
+
+                <p>₹59,999</p>
+
+                <button onclick="location.href='product-details.html'">
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 ShopEase | Product Details
+
+        </p>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/wishlist.js"></script>
+
+</body>
+
+</html>
