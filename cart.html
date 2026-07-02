@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li>
+                <a href="cart.html" style="color:#ffd700;">
+                    Cart
+                </a>
+            </li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Cart -->
+
+    <section class="cart-section">
+
+        <h1>🛒 My Shopping Cart</h1>
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cartItems">
+
+                <!-- JavaScript will load cart items here -->
+
+            </tbody>
+
+        </table>
+
+        <div class="cart-summary">
+
+            <h2>
+
+                Grand Total :
+                ₹<span id="grandTotal">0</span>
+
+            </h2>
+
+            <a href="checkout.html">
+
+                <button class="checkout-btn">
+
+                    Proceed to Checkout
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Empty Cart -->
+
+    <section id="emptyCart" class="empty-cart" style="display:none;">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <h2>Your Cart is Empty</h2>
+
+        <p>Add some amazing products to continue shopping.</p>
+
+        <a href="products.html">
+
+            <button>
+
+                Continue Shopping
+
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 ShopEase | Shopping Made Easy
+
+        </p>
+
+    </footer>
+
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
