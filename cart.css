@@ -1,0 +1,177 @@
+/* ==========================
+   ShopEase Cart Page
+========================== */
+
+.cart-section{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.cart-section h1{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+    font-size:38px;
+}
+
+/* Table */
+
+.cart-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.cart-table thead{
+    background:#1e3a8a;
+    color:#fff;
+}
+
+.cart-table th,
+.cart-table td{
+    padding:18px;
+    text-align:center;
+}
+
+.cart-table tbody tr{
+    border-bottom:1px solid #ddd;
+}
+
+.cart-table tbody tr:hover{
+    background:#f8f9ff;
+}
+
+/* Quantity Buttons */
+
+.quantity{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.quantity button{
+    width:35px;
+    height:35px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.quantity button:hover{
+    background:#1d4ed8;
+}
+
+.quantity span{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* Remove Button */
+
+.remove-btn{
+    background:#ef4444;
+    color:#fff;
+    border:none;
+    padding:10px 16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.remove-btn:hover{
+    background:#dc2626;
+}
+
+/* Summary */
+
+.cart-summary{
+    margin-top:35px;
+    text-align:right;
+}
+
+.cart-summary h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.checkout-btn{
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    background:#16a34a;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-btn:hover{
+    background:#15803d;
+}
+
+/* Empty Cart */
+
+.empty-cart{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.empty-cart i{
+    font-size:90px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.empty-cart h2{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.empty-cart p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.empty-cart button{
+    padding:14px 30px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.empty-cart button:hover{
+    background:#1d4ed8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.cart-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.cart-summary{
+    text-align:center;
+}
+
+.checkout-btn{
+    width:100%;
+}
+
+}
