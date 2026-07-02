@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>ShopEase</h2>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" style="color:#ffd700;">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+
+    <section style="padding:40px;text-align:center;">
+
+        <h1 style="color:#1e3a8a;font-size:40px;">
+            Our Products
+        </h1>
+
+        <p>
+            Choose your favourite products and add them to your cart.
+        </p>
+
+        <br>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search products..."
+            style="padding:12px;width:320px;border-radius:8px;border:1px solid #ccc;">
+
+    </section>
+
+    <!-- Product Grid -->
+
+    <section class="featured">
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+            <div class="card">
+                <img src="images/product1.jpg">
+                <h3>Wireless Headphones</h3>
+                <p>₹2,499</p>
+                <button onclick="addToCart('Wireless Headphones',2499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <img src="images/product2.jpg">
+                <h3>Smart Watch</h3>
+                <p>₹3,999</p>
+                <button onclick="addToCart('Smart Watch',3999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <img src="images/product3.jpg">
+                <h3>Running Shoes</h3>
+                <p>₹2,999</p>
+                <button onclick="addToCart('Running Shoes',2999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card">
+                <img src="images/laptop.jpg">
+                <h3>Laptop</h3>
+                <p>₹59,999</p>
+                <button onclick="addToCart('Laptop',59999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card">
+                <img src="images/mobile.jpg">
+                <h3>Smart Phone</h3>
+                <p>₹24,999</p>
+                <button onclick="addToCart('Smart Phone',24999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card">
+                <img src="images/bag.jpg">
+                <h3>Travel Bag</h3>
+                <p>₹1,499</p>
+                <button onclick="addToCart('Travel Bag',1499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card">
+                <img src="images/mouse.jpg">
+                <h3>Gaming Mouse</h3>
+                <p>₹999</p>
+                <button onclick="addToCart('Gaming Mouse',999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card">
+                <img src="images/keyboard.jpg">
+                <h3>Mechanical Keyboard</h3>
+                <p>₹2,799</p>
+                <button onclick="addToCart('Mechanical Keyboard',2799)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 ShopEase | Happy Shopping 🛍️
+        </p>
+
+    </footer>
+
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>
