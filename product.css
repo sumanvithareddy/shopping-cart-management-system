@@ -1,0 +1,251 @@
+/* =========================================
+   ShopEase Products CSS
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* Page Header */
+
+.page-header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+}
+
+.page-header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.page-header p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* Product Grid */
+
+.product-container{
+    width:90%;
+    max-width:1300px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* Product Card */
+
+.card{
+    background:#ffffff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin-top:18px;
+    color:#1e3a8a;
+}
+
+.card p{
+    margin:12px 0;
+    color:#16a34a;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.card button{
+    width:85%;
+    margin:15px auto 20px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#1d4ed8;
+}
+
+/* Product Details */
+
+.product-details{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.product-image img{
+    width:100%;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.product-info h1{
+    color:#1e3a8a;
+    font-size:40px;
+}
+
+.rating{
+    color:#f59e0b;
+    font-size:20px;
+    margin:15px 0;
+}
+
+.price{
+    color:#16a34a;
+    font-size:34px;
+    margin:15px 0;
+}
+
+.description{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.specifications{
+    margin:25px 0;
+}
+
+.specifications h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.specifications ul{
+    padding-left:20px;
+}
+
+.specifications li{
+    margin:10px 0;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.shop-btn,
+.wishlist-btn{
+    text-decoration:none;
+    border:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.shop-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.shop-btn:hover{
+    background:#1d4ed8;
+}
+
+.wishlist-btn{
+    background:#e11d48;
+    color:white;
+}
+
+.wishlist-btn:hover{
+    background:#be123c;
+}
+
+/* Delivery Box */
+
+.delivery{
+    margin-top:30px;
+    background:#f5f7ff;
+    padding:20px;
+    border-radius:12px;
+}
+
+.delivery h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+.delivery p{
+    margin:8px 0;
+}
+
+/* Empty Wishlist */
+
+#emptyWishlist{
+    text-align:center;
+}
+
+#emptyWishlist button{
+    margin-top:20px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.product-details{
+    grid-template-columns:1fr;
+}
+
+.product-info{
+    text-align:center;
+}
+
+.buttons{
+    justify-content:center;
+}
+
+}
+
+@media(max-width:600px){
+
+.page-header h1{
+    font-size:32px;
+}
+
+.card img{
+    height:200px;
+}
+
+.product-info h1{
+    font-size:30px;
+}
+
+.price{
+    font-size:28px;
+}
+
+}
