@@ -1,0 +1,185 @@
+/* ===========================
+   ShopEase Login Page
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563eb,#1e40af,#0f172a);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.login-box{
+    width:420px;
+    background:#ffffff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:30px;
+}
+
+.login-box h1{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:8px;
+}
+
+.login-box p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-box input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 6px rgba(37,99,235,.3);
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+    font-size:14px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+}
+
+.bottom{
+    text-align:center;
+    margin-top:22px;
+}
+
+.bottom a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.bottom a:hover{
+    text-decoration:underline;
+}
+
+.back{
+    text-align:center;
+    margin-top:18px;
+}
+
+.back a{
+    color:#555;
+    text-decoration:none;
+}
+
+.back a:hover{
+    color:#2563eb;
+}
+
+@media(max-width:500px){
+
+.login-box{
+    width:100%;
+    padding:30px 25px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.login-box h1{
+    font-size:28px;
+}
+
+.options{
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+}
+
+}
