@@ -250,3 +250,68 @@ footer{
 }
 
 }
+/* ===========================
+   Checkout Page
+=========================== */
+
+.checkout-container{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:40px;
+}
+
+.checkout-form,
+.order-summary{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.checkout-form h2,
+.order-summary h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.checkout-form form{
+    display:flex;
+    flex-direction:column;
+}
+
+.checkout-form label{
+    margin-top:15px;
+    font-weight:600;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select{
+    margin-top:8px;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.checkout-form button{
+    margin-top:25px;
+}
+
+.summary-box p,
+.summary-box h3{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+@media(max-width:900px){
+
+.checkout-container{
+    grid-template-columns:1fr;
+}
+
+}
